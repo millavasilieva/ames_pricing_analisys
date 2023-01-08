@@ -36,15 +36,15 @@ st.title("""
 Анализ корелляции цены дома по его составляющим
 """)
 
-df1 = get_data('/home/milla/ds_bootcamp/ds_online/06-supervised/house_pricing_project/train.csv')
-df2 = get_data('/home/milla/ds_bootcamp/ds_online/06-supervised/house_pricing_project/test.csv')
+df1 = get_data('/home/milla/myprojects/amos_pricing_analisys/train.csv')
+df2 = get_data('/home/milla/myprojects/amos_pricing_analisys/test.csv')
 df = pd.concat([df1, df2]).reset_index(drop=True)
 
-dfprep = get_data1('/home/milla/ds_bootcamp/ds_online/06-supervised/house_pricing_project/prepared_dataset_house_pricing.csv')
+dfprep = get_data1('/home/milla/myprojects/amos_pricing_analisys/prepared_dataset_house_pricing.csv')
 
 
 
-option = st.selectbox ('Выберите тип визуализации',('Целевой признак','Степень корреляции с целеым признаком', 'Построение моделей'))
+option = st.selectbox ('Выберите тип визуализации',('Целевой признак','Степень корреляции с целевым признаком', 'Построение моделей'))
 
 if option == 'Целевой признак':
 
