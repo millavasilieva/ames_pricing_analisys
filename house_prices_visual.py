@@ -82,7 +82,7 @@ if option == 'Целевой признак':
 if option == 'Степень корреляции с целеым признаком':
 
     #correlations
-    num_feat=df.columns[df1.dtypes!=object]
+    num_feat=df1.columns[df1.dtypes!=object]
     num_feat=num_feat[1:-1] 
     labels = []
     values = []
