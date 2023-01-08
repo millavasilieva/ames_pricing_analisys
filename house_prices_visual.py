@@ -36,11 +36,11 @@ st.title("""
 Анализ корелляции цены дома по его составляющим
 """)
 
-df1 = get_data('/amos_pricing_analisys/train.csv')
-df2 = get_data('/amos_pricing_analisys/test.csv')
+df1 = get_data('https://github.com/millavasilieva/amos_pricing_analisys/blob/main/train.csv')
+df2 = get_data('https://github.com/millavasilieva/amos_pricing_analisys/blob/main/test.csv')
 df = pd.concat([df1, df2]).reset_index(drop=True)
 
-dfprep = get_data1('/amos_pricing_analisys/prepared_dataset_house_pricing.csv')
+dfprep = get_data1('https://github.com/millavasilieva/amos_pricing_analisys/blob/main/prepared_dataset_house_pricing.csv')
 
 
 
@@ -146,7 +146,7 @@ if option == 'Построение моделей':
     ### Берем среднее полученнных моделей
     """)
 
-    sub = get_data2('/home/milla/ds_bootcamp/ds_online/06-supervised/house_pricing_project/8new_submission.csv')  
+    sub = get_data2('https://github.com/millavasilieva/amos_pricing_analisys/blob/main/8new_submission.csv')  
     st.write(sub)
 
     st.markdown("""
