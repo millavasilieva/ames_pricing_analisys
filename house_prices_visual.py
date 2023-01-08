@@ -79,7 +79,7 @@ if option == 'Целевой признак':
     st.write(fig1)
 
 
-if option == 'Степень корреляции с целеым признаком':
+if option == 'Степень корреляции с целевым признаком':
 
     #correlations
     num_feat=df1.columns[df1.dtypes!=object]
