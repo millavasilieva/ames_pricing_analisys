@@ -83,8 +83,9 @@ if option == 'Степень корреляции с целевым призна
 
     #correlations
     st.markdown("""
-    Feature Selection""")
-
+    ## Feature Selection
+    """)
+    st.image('https://raw.githubusercontent.com/millavasilieva/ames_pricing_analisys/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%20%D0%BE%D1%82%202023-01-09%2015-00-36.png')
     num_feat=df1.columns[df1.dtypes!=object]
     num_feat=num_feat[1:-1] 
     labels = []
