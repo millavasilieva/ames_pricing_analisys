@@ -82,6 +82,10 @@ if option == 'Целевой признак':
 if option == 'Степень корреляции с целевым признаком':
 
     #correlations
+    st.markdown("""
+    ## Feature Selection
+    """)
+
     num_feat=df1.columns[df1.dtypes!=object]
     num_feat=num_feat[1:-1] 
     labels = []
@@ -150,7 +154,7 @@ if option == 'Построение моделей':
     st.write(sub)
 
     st.markdown("""
-    ### Лучший результат = 0.13475, место - 1372
+    ### Лучший результат = 0.13185,, место - 1216
     """)
     
 
