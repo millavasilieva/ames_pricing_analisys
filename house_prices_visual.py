@@ -146,7 +146,7 @@ if option == 'Построение моделей':
     ### Берем среднее полученнных моделей
     """)
 
-    sub = get_data2('https://raw.githubusercontent.com/millavasilieva/amos_pricing_analisys/main/8new_submission.csv')  
+    sub = get_data2('https://raw.githubusercontent.com/millavasilieva/ames_pricing_analisys/main/final1_sub.csv')  
     st.write(sub)
 
     st.markdown("""
