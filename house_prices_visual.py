@@ -83,8 +83,7 @@ if option == 'Степень корреляции с целевым призна
 
     #correlations
     st.markdown("""
-    ## Feature Selection
-    """)
+    Feature Selection""")
 
     num_feat=df1.columns[df1.dtypes!=object]
     num_feat=num_feat[1:-1] 
